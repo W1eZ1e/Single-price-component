@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root{
+/* Primary */
+
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+
+/* Neutral */
+
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Grayish-Blue);
+    height: 95vh;
+}
+.main-card{
+    display: flex;
+    flex-direction: column;
+    width: 635px;
+    background-color: var(--Light-Gray);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card-top,
+.card-left-bottom,
+.card-right-bottom{
+    padding: 39px;
+}
+/* card-top styling */
+.ct-h1{
+    color: var(--Cyan);
+    font-size: 24px;
+    margin-bottom: 17px;
+}
+.ct-h3{
+    color: var(--Bright-Yellow);
+    margin-bottom: 13px;
+}
+.ct-p{
+    color: var(--Grayish-Blue);
+    margin-bottom: 22px;
+}
+/* end of card-top styling */
+
+/* card-bottom styling */
+.main-card-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.card-left-bottom{
+    background-color: hsl(179, 62%, 43%);
+    color: var(--Light-Gray);
+    width: 50%;
+}
+.clb-h2{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.clb-h1{
+    font-size: 38px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+#clb-span{
+    font-size: 15px;
+    font-weight: 300;
+    opacity: 0.5;
+}
+.clb-p{
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.709);
+    margin-bottom: 23px;
+}
+.clb-bttn{
+    background-color: var(--Bright-Yellow);
+    color: var(--Light-Gray);
+    font-size: 16px;
+    font-weight: 700;
+    border-style: none;
+    width: 235px;
+    padding: 15px;
+    border-radius: 5px;
+}
+.clb-bttn:hover{
+    cursor: pointer;
+    background-color: hsla(71, 73%, 54%, 0.793);
+}
+
+.card-right-bottom{
+    background-color: hsla(179, 62%, 43%, 0.897);
+    color: var(--Light-Gray);
+    width: 50%;
+}
+.crb-h1{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.crb-p{
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.709);
+
+}
+/* end of card-bottom styling */
+
+
+@media (max-width:600px) {
+    body{
+        height: auto;
+    }
+    .main-card{
+        flex-direction: column;
+        width: 300px;
+        margin-bottom: 20px;
+        
+    }
+    .card-top{
+        padding: 30px;
+    }
+    .ct-p{
+        line-height: 25px;
+    }
+    .main-card-bottom{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-left-bottom{
+        width: 100%;
+    }
+    .card-right-bottom{
+        width: 100%;
+    }
+}
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
